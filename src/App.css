@@ -36,3 +36,112 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #06bee1;
+}
+
+/* Style the header */
+header {
+  background-color: #03153d;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1.3;
+  margin-right: 5px;
+  text-align: left;
+  background-color: #03256c;
+  padding-left: 5px;
+
+}
+
+dl{
+  font-family: Arial, Helvetica, serif;
+  font-weight: bold;
+  font-style: normal;
+  color: wheat;
+}
+
+dd{
+  color:wheat;
+  line-height: 150%;
+}
+dd:hover {
+  font-size: 95%;
+  color: lightseagreen;
+}
+
+aside {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 5px;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 7;
+  background-color: #06bee1;
+  
+}
+.film {
+  text-align: left;
+  padding-bottom: 5px;
+  
+}
+.film table{
+  margin-bottom: 6px;
+  margin-left: 1px;
+  width: 100%;
+  background-color: #1768ac;
+  color: aliceblue;
+}
+.film td{
+  padding-left: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: wheat;
+  background-color: #021f5e;
+  margin-top: 5px;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
